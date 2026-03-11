@@ -1,0 +1,50 @@
+@import "tailwindcss";
+h1,
+h2 {
+  font-family: "Martel Sans", sans-serif;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+.name {
+  font-family: "Bruno Ace SC", sans-serif;
+}
+
+@theme {
+  --color-dark-amethyst-50: #efedf8;
+  --color-dark-amethyst-100: #e0daf1;
+  --color-dark-amethyst-200: #c1b5e3;
+  --color-dark-amethyst-300: #a190d5;
+  --color-dark-amethyst-400: #826bc7;
+  --color-dark-amethyst-500: #6346b9;
+  --color-dark-amethyst-600: #4f3894;
+  --color-dark-amethyst-700: #3b2a6f;
+  --color-dark-amethyst-800: #281c4a;
+  --color-dark-amethyst-900: #140e25;
+  --color-dark-amethyst-950: #0e0a1a;
+
+  --color-dusty-grape-50: #f0eff6;
+  --color-dusty-grape-100: #e1dfec;
+  --color-dusty-grape-200: #c3bfd9;
+  --color-dusty-grape-300: #a59fc6;
+  --color-dusty-grape-400: #877eb4;
+  --color-dusty-grape-500: #695ea1;
+  --color-dusty-grape-600: #544b81;
+  --color-dusty-grape-700: #3f3960;
+  --color-dusty-grape-800: #2a2640;
+  --color-dusty-grape-900: #151320;
+  --color-dusty-grape-950: #0f0d16;
+
+  --color-amethyst-smoke-50: #f2eef6;
+  --color-amethyst-smoke-100: #e4ddee;
+  --color-amethyst-smoke-200: #cabcdc;
+  --color-amethyst-smoke-300: #af9acb;
+  --color-amethyst-smoke-400: #9578ba;
+  --color-amethyst-smoke-500: #7a57a8;
+  --color-amethyst-smoke-600: #624587;
+  --color-amethyst-smoke-700: #493465;
+  --color-amethyst-smoke-800: #312343;
+  --color-amethyst-smoke-900: #181122;
+  --color-amethyst-smoke-950: #110c18;
+
+}
