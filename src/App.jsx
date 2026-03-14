@@ -11,7 +11,7 @@ import Testimonial from "./sections/Testimonial";
 
 function App() {
   return (
-    <div className="relative bg-linear-120 from-dark-amethyst-800 via-dusty-grape-600 to-amethyst-smoke-400 text-white">
+    <div className="relative bg-linear-120 from-dark-amethyst-800 via-dusty-grape-600 to-amethyst-smoke-400 text-white overflow-x-hidden">
       <CustomCursor />
       <Navbar />
       <Home />

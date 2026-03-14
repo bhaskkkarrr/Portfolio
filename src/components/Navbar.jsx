@@ -33,22 +33,32 @@ const Navbar = () => {
     const handleScroll = () => {
       if (forceVisible) {
         setShowNavbar(true);
+        lastScrollY.current = window.scrollY;
         return;
       }
+
       const currentScrollY = window.scrollY;
-      if (currentScrollY > lastScrollY) {
+
+      if (currentScrollY > lastScrollY.current) {
+        // scrolling down
         setShowNavbar(false);
-      } else {
-        setShowNavbar(true);
         if (timerId.current) clearTimeout(timerId.current);
+      } else {
+        // scrolling up
+        setShowNavbar(true);
+
+        if (timerId.current) clearTimeout(timerId.current);
+
         timerId.current = setTimeout(() => {
           setShowNavbar(false);
         }, 3000);
       }
-      lastScrollY = currentScrollY;
+
+      lastScrollY.current = currentScrollY;
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
       if (timerId.current) clearTimeout(timerId.current);
@@ -56,7 +66,10 @@ const Navbar = () => {
   }, [forceVisible]);
   return (
     <>
-      <nav
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: showNavbar ? 0 : -100 }}
+        transition={{ duration: 0.3 }}
         className={`fixed top-0 left-0 w-full flex items-center justify-between px-6 py-4 z-50 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}
       >
         <div className="flex items-center space-x-2">
@@ -80,7 +93,7 @@ const Navbar = () => {
             Reach Out
           </a>
         </motion.div>
-      </nav>
+      </motion.nav>
       <OverlayMenu isOpen={menuOpen} close={() => setMenuOpen(false)} />
     </>
   );
