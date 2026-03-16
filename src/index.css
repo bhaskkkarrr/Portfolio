@@ -10,7 +10,7 @@ body {
   font-family: "Bruno Ace SC", sans-serif;
 }
 
-@theme {
+@theme{
   --color-dark-amethyst-50: #efedf8;
   --color-dark-amethyst-100: #e0daf1;
   --color-dark-amethyst-200: #c1b5e3;
