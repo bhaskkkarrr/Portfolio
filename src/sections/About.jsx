@@ -3,7 +3,13 @@ import { motion } from "motion/react";
 import profile from "../assets/profileeee.png";
 const About = () => {
   return (
-    <div className="w-full h-fit lg:mt-20 relative md:w-xl lg:w-5xl xl:w-7xl max-w-8xl mx-auto px-4 transition-all duration-300">
+    <section
+      id="about"
+      className="w-full h-fit lg:mt-20 relative md:w-xl lg:w-5xl xl:w-7xl max-w-8xl mx-auto px-4 transition-all duration-300"
+    >
+      <div className="w-full flex justify-center my-10">
+        <div className="h-px w-2/3 bg-linear-to-r from-transparent via-amethyst-smoke-400 to-transparent opacity-60" />
+      </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 ">
         {/* DP */}
         <div className="flex flex-col justify-between">
@@ -54,7 +60,7 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

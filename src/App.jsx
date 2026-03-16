@@ -18,15 +18,13 @@ function App() {
     <>
       {!loading && <IntroAnimation onFinish={() => setLoading(true)} />}
       {loading && (
-        <motion.div
-          className="relative bg-linear-120 from-dark-amethyst-800 via-dusty-grape-600 to-amethyst-smoke-400 text-white overflow-x-hidden"
-        >
+        <motion.div className="relative bg-linear-120 from-dark-amethyst-800 via-dusty-grape-600 to-amethyst-smoke-400 text-white overflow-x-hidden">
           <CustomCursor />
           <Navbar />
           <Home />
           <About />
-          <Project />
           <Skills />
+          <Project />
           <Testimonial />
           <Experience />
           <Contact />

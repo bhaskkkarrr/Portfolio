@@ -70,7 +70,8 @@ const Home = () => {
                   }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  href="#"
+                  target="_blank"
+                  href="https://github.com/bhaskkkarrr"
                 >
                   <SiGithub />
                 </motion.a>
@@ -81,9 +82,11 @@ const Home = () => {
                   }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  href="#"
+                  target="_blank"
+                  href="https://www.instagram.com/bhaskkkarr"
                 >
                   <FaInstagram />
+                  {console.log(<FaInstagram />)}
                 </motion.a>
                 <motion.a
                   whileHover={{
@@ -92,7 +95,8 @@ const Home = () => {
                   }}
                   whileTap={{ scale: 0.9 }}
                   transition={{ type: "spring", stiffness: 300 }}
-                  href="#"
+                  target="_blank"
+                  href="https://www.linkedin.com/in/bhaskkkarrr"
                 >
                   <FaLinkedinIn />
                 </motion.a>
