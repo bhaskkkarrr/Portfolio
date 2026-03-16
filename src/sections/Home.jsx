@@ -15,11 +15,11 @@ const Home = () => {
 
       <div className="relative h-full w-full md:w-xl lg:w-5xl xl:w-7xl max-w-8xl mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 transition-all duration-300">
         {/* Name */}
-        <div className="flex flex-col h-full justify-center text-center lg:text-left relative">
+        <div className="flex flex-col h-full justify-center md:mt-10 text-center lg:text-left relative">
           <div className="w-full mx-auto max-w-4xl">
-            <motion.div className="flex flex-col  lg:items-start space-y-6 xl:space-y-8 ">
+            <motion.div className="flex flex-col lg:items-start space-y-6 xl:space-y-8 ">
               {/* TypeWriter Effect */}
-              <div className="transition-all duration-300 name text-xl md:text-4xl lg:text-4xl">
+              <div className="transition-all duration-300 name text-xl md:text-3xl lg:text-4xl">
                 <Typewriter
                   options={{
                     strings: ["Web Developer", "Software Developer"],
@@ -30,10 +30,10 @@ const Home = () => {
               </div>
               {/* Name */}
               <div className="">
-                <div className="text-dark-amethyst-200 text-4xl transition-all duration-300 font-medium lg:text-5xl">
+                <div className="text-dark-amethyst-200 text-3xl transition-all duration-300 font-medium lg:text-5xl">
                   Hello, I'm
                 </div>
-                <div className="text-5xl transition-all duration-300 md:text-5xl xl:text-6xl font-bold">
+                <div className="text-3xl transition-all duration-300  md:text-5xl xl:text-6xl font-bold">
                   Bhaskar Chauhan
                 </div>
               </div>
