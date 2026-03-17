@@ -41,6 +41,7 @@ const OverlayMenu = ({ isOpen, close }) => {
                 >
                   <a
                     href={`#${item.toLowerCase()}`}
+                    onClick={close}
                     className="text-3xl text-white font-semibold hover:text-amethyst-smoke-600 transition-colors duration-300"
                   >
                     {item}
