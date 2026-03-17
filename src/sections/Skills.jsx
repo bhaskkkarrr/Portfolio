@@ -74,7 +74,7 @@ const Skills = () => {
                 <span className="hover:scale-125 transition-all duration-300">
                   {skill.icon}
                 </span>
-                <span className="flex text-sm text-white">{skill.name}</span>
+                <span className="flex text-sm text-whi">{skill.name}</span>
               </div>
             );
           })}
