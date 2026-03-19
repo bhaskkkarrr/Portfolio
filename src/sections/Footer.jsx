@@ -4,9 +4,6 @@ import { motion } from "motion/react";
 const Footer = () => {
   return (
     <section id="footer" className="w-full h-fit  overflow-hidden my-15 ">
-      <div className="w-full flex justify-center mb-5">
-        <div className="h-px w-2/3 bg-linear-to-r from-transparent via-amethyst-smoke-900 to-transparent" />
-      </div>
       <div className="flex flex-col items-center justify-center gap-2 space-y-4">
         <span className="text-center text-4xl font-semibold name ">
           Bhaskar Chauhan

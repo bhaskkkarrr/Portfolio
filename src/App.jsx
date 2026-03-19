@@ -3,14 +3,13 @@ import CustomCursor from "./components/CustomCursor";
 import Navbar from "./components/Navbar";
 import About from "./sections/About";
 import Contact from "./sections/Contact";
-import Experience from "./sections/Experience";
 import Footer from "./sections/Footer";
 import Home from "./sections/Home";
 import Project from "./sections/Project";
 import Skills from "./sections/Skills";
-import Testimonial from "./sections/Testimonial";
 import IntroAnimation from "./components/IntroAnimation";
 import { motion } from "motion/react";
+import Education from "./sections/Education";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -25,7 +24,7 @@ function App() {
           <About />
           <Skills />
           <Project />
-          <Experience />
+          <Education />
           <Contact />
           <Footer />
         </motion.div>

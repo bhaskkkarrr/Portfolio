@@ -33,9 +33,6 @@ const Contact = () => {
   };
   return (
     <>
-      <div className="w-full flex justify-center lg:mb-10">
-        <div className="h-px w-2/3 bg-linear-to-r from-transparent via-amethyst-smoke-800 to-transparent" />
-      </div>
       <section
         id="contact"
         className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 justify-center items-center text-white"
@@ -116,6 +113,9 @@ const Contact = () => {
           </form>
         </motion.div>
       </section>
+      <div className="w-full flex justify-center lg:mb-10">
+        <div className="h-px w-2/3 bg-linear-to-r from-transparent via-amethyst-smoke-800 to-transparent" />
+      </div>
     </>
   );
 };
