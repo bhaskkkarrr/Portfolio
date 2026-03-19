@@ -3,6 +3,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import avator from "../assets/Astra.png";
 import { easeInOut, motion } from "motion/react";
+import { toast } from "react-toastify";
 const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
 const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
 const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
@@ -25,9 +26,11 @@ const Contact = () => {
         PUBLIC_KEY,
       );
       setSuccess(true);
+      toast.success("Inquiry sent");
       reset();
     } catch (error) {
       setError(error.name);
+      toast.error(error.name);
       setSuccess(false);
     }
   };
@@ -35,7 +38,7 @@ const Contact = () => {
     <>
       <section
         id="contact"
-        className="w-full min-h-screen grid grid-cols-1 md:grid-cols-2 justify-center items-center text-white"
+        className="w-full my-10 transition-all duration-300 grid grid-cols-1 md:grid-cols-2 justify-center items-center text-white"
       >
         <motion.div
           animate={{ y: [0, -10, 0] }}

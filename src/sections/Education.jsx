@@ -78,7 +78,10 @@ const EducationCard = ({ item }) => {
 const Education = () => {
   return (
     <>
-      <section className="w-full px-4 py-16 md:py-20 transition-all duration-500">
+      <section
+        id="education"
+        className="w-full px-4 py-16 md:py-20 transition-all duration-500"
+      >
         {/* Title */}
         <motion.h1
           initial={{ opacity: 0, y: -24 }}

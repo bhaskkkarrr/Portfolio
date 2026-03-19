@@ -28,8 +28,7 @@ const OverlayMenu = ({ isOpen, close }) => {
               "About",
               "Skills",
               "Projects",
-              "Experience",
-              "Testimonials",
+              "Education",
               "Contact",
             ].map((item, i) => {
               return (

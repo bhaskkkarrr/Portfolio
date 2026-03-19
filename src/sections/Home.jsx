@@ -46,12 +46,12 @@ const Home = () => {
                 </div>
 
                 {/* Button */}
-                <motion.div className="flex gap-3 xl:gap-5 xl:text-xl justify-center items-center">
+                <motion.div className="flex gap-3 xl:gap-5 text-md xl:text-xl justify-center items-center">
                   <motion.a
                     href="#projects"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="rounded-full px-5 py-3 text-amethyst-smoke-700 font-semibold bg-linear-90 from-[#87a330] to-[#cad593] "
+                    className="rounded-full md:px-5 md:py-3 px-2 py-1 text-amethyst-smoke-700 font-semibold bg-linear-90 from-[#87a330] to-[#cad593] "
                   >
                     View My Work
                   </motion.a>
@@ -59,7 +59,7 @@ const Home = () => {
                     href="#projects"
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
-                    className="rounded-full px-5 py-3 xl:gap-5  text-amethyst-smoke-700 font-semibold bg-white"
+                    className="rounded-full md:px-5 md:py-3 px-2 py-1  xl:gap-5  text-amethyst-smoke-700 font-semibold bg-white"
                     download={"../assets/Bhaskar's Resume (Latest).pdf"}
                   >
                     My Resume
