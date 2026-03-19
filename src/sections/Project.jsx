@@ -49,7 +49,7 @@ const Project = () => {
     [isMobile],
   );
   return (
-    <section id="projects" className="w-full h-screen p-20">
+    <section id="projects" className="w-full h-screen">
       {/* {projects.map((project, i) => {
         return (
           <div key={i} className={`bg-[${project.bgColor}] w-full`}>
