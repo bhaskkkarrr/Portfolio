@@ -4,7 +4,7 @@ import Typewriter from "typewriter-effect";
 import { SiGithub } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
-
+import resume from "../assets/Bhaskar's Resume (Latest).pdf";
 const Home = () => {
   return (
     <>
@@ -56,11 +56,11 @@ const Home = () => {
                     View My Work
                   </motion.a>
                   <motion.a
-                    href="#projects"
+                    href={resume}
                     whileHover={{ scale: 1.1 }}
                     whileTap={{ scale: 0.95 }}
                     className="rounded-full md:px-5 md:py-3 px-2 py-1  xl:gap-5  text-amethyst-smoke-700 font-semibold bg-white"
-                    download={"../assets/Bhaskar's Resume (Latest).pdf"}
+                    download={"Bhaskar_Resume.pdf"}
                   >
                     My Resume
                   </motion.a>
