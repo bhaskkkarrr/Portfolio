@@ -8,7 +8,7 @@ import Echo from "../assets/ECHO.png";
 import { GoDotFill } from "react-icons/go";
 import { useState } from "react";
 import weather from "../assets/WEATHER.png";
-import packkart from "../assets/packkart.png";
+import auth from "../assets/auth.png";
 const projects = [
   {
     sno: "01",
@@ -53,6 +53,24 @@ const projects = [
   },
   {
     sno: "03",
+    category: "Backend",
+    title: "Complete Authentication Backend",
+    description:
+      "Secure authentication system built using Node.js, implementing user registration with OTP email verification, JWT-based login, refresh token rotation, and session management. Features include password hashing, HTTP-only cookies, and multi-device logout support for enhanced security.",
+    stack: [
+      "Node.js",
+      "Express.js",
+      "Nodemailer",
+      "MongoDB",
+      "JWT Authentication",
+      "OAuth 2",
+    ],
+    live: "#",
+    github: "https://github.com/bhaskkkarrr/Authentication",
+    image: auth,
+  },
+  {
+    sno: "04",
     category: "Basic APIs",
     title: "Weather Forecast",
     description:
@@ -69,17 +87,6 @@ const projects = [
     live: "https://weather-forecast-dashboards.netlify.app/",
     github: "https://github.com/bhaskkkarrr/weather-forecast",
     image: weather,
-  },
-  {
-    sno: "04",
-    category: "Frontend",
-    title: "PackKart",
-    description:
-      "PackKart is a responsive e-commerce website designed for a packaging material business, allowing users to explore products and submit inquiries through features like “Request a Quote” and “Contact Us.” The platform focuses on providing a smooth user experience and simulating a real-world customer inquiry workflow for business interactions.",
-    stack: ["HTML", "CSS", "JavaScript", "Bootstrap", "GitHub"],
-    live: "https://weather-forecast-dashboards.netlify.app/",
-    github: "https://bhaskkkarrr.github.io/packkart/",
-    image: packkart,
   },
 ];
 
@@ -141,7 +148,7 @@ const Project = () => {
                       whileHover={{ scale: 1.2 }}
                       whileTap={{ scale: 0.9 }}
                       href={item.live}
-                      target="_blank"
+                      target={item.live === "#" ? "" : " _blank"}
                       className="bg-amethyst-smoke-400 rounded-full p-3 text-xl hover:bg-amethyst-smoke-900 transition-all duration-300"
                     >
                       <GoArrowUpRight />
